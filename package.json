@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/dorler/foodbook/issues"
   },
-  "homepage": "https://github.com/dorler/foodbook#readme"
+  "homepage": "https://github.com/dorler/foodbook#readme",
+  "dependencies": {
+    "connect-session-sequelize": "^7.1.1",
+    "express-session": "^1.17.2",
+    "node": "^16.5.0"
+  }
 }
