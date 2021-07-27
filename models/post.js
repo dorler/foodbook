@@ -10,8 +10,17 @@ post.init(
     },
     body: {
       type: DataTypes.STRING
+    },
+
+    userId: { 
+      type: DataTypes.Integer,
+      references:{
+        model:"user",
+        key:"id"
+      }
     }
   },
+
   {
     sequelize
   }
