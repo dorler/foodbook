@@ -1,4 +1,3 @@
-
 async function loginFormHandler(event) {
     event.preventDefault();
   
@@ -24,4 +23,3 @@ async function loginFormHandler(event) {
   }
   
   document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
->>>>>>> 1658eed4267300d77554828598fab1b94f1f0d7b
