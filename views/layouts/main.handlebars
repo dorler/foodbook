@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Foodbook Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodbook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel='stylesheet' href="/public/css/style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-    <ul>
-      <li class="navitem"><a href="/">Foodbok</a></li>
-      <li class="navitem"><a href="/dashboard">Dashboard</a></li>
-      <li class="navitem"><a href="/login">Login</a></li>
-      <li class="navitem"><a href="#" id="logout-link">Logout</a></li>
-    </ul>
-  </nav>
-    <header>
-        <h1>Foodbook</h1>
-        <h2>Welcome To Foodbook!</h2>
-        <nav>
-            <a href ="/login">login</a>
-        </nav>
-    </header>
+<!-- Navigation Bar -->
+   <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">FoodBook</li>
+          <li><nav>
+            <a href ="/login">Login</a>
+           </nav>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">About Us </a></li>
+        </ul>
+      </div>
+    </div>
+
+ <main class="grid-container">
+      
+ <!--Food Hero-->
+  <header class="hero-section" id="hero">
+     <div class="hero-section-text">
+           <h1>Connecting people with food</h1>
+              <h4><small> Welcome to Foodbook where we are constantly working toward connection peopole with great food experiences. </small>
+           </h4>
+          </div>
+      </header>
+      
     {{{body}}}
     
 </body>
