@@ -11,9 +11,8 @@ post.init(
     body: {
       type: DataTypes.STRING
     },
-
     userId: { 
-      type: DataTypes.Integer,
+      type: DataTypes.INTEGER,
       references:{
         model:"user",
         key:"id"

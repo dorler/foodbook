@@ -5,12 +5,12 @@ const { post, comment, user } = require('../models/');
 router.get('/', async (req, res) => {
   try {
     const postData = await post.findAll({
-      include: [User],
+      include: [user],
     });
 
     const posts = postData.map((post) => post.get({ plain: true }));
 
-    res.render('all-posts', { posts });
+    res.render('all-post', {posts});
   } catch (err) {
     res.status(500).json(err);
   }
@@ -21,7 +21,7 @@ router.get('/post/:id', async (req, res) => {
   try {
     const postData = await post.findByPk(req.params.id, {
       include: [
-        User,
+        user,
         {
           model: comment,
           include: [user],
