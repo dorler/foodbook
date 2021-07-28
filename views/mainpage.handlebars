@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodbook Home</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="flex-column min-100-vh">
+  <nav class="navbar">
+    <ul>
+      <li class="navitem"><a href="/">Foodbok</a></li>
+      <li class="navitem"><a href="/dashboard">Dashboard</a></li>
+      <li class="navitem"><a href="/login">Login</a></li>
+      <li class="navitem"><a href="#" id="logout-link">Logout</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <h1 class="app-title"><a href="/">Foodbook</a></h1>
+    <p>where we post all things food. </p>
+  </header>
+
+  <main class="col-auto">
+    {{{body}}}
+  </main>
+
+  <footer class="flex-row justify-center">
+    &copy; All rights reserved to FoodBook
+  </footer>
+</body>
+
+</html>
+<script src="/js/logout.js"></script>
