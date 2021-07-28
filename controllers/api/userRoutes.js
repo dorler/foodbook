@@ -8,7 +8,7 @@ router.post('/', async (req, res) => {
           password: req.body.password,
         });
         
-        console.log("we arre hitting it",newUser);
+        console.log("we are hitting it",newUser);
         
         
     req.session.save(() => {
@@ -22,6 +22,8 @@ router.post('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+
 
 router.post('/login', async (req, res) => {
   try {

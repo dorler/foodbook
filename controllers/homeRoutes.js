@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { post, comment, user } = require('../models/');
 
-// get all posts for homepage
+// get all posts for users homepage
 router.get('/', async (req, res) => {
   try {
     const postData = await post.findAll({
@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// get single post
+
 router.get('/post/:id', async (req, res) => {
   try {
     const postData = await post.findByPk(req.params.id, {
